@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Abhishek Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/ABHILOGO.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                           
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Business Analyst</p>
+                    <h1>Hi, Iam <span>Abhishek S Ghodageri</span> </h1>
+                </div>
+
+
+            </div>
+
+        </div>
+        
+
+<!------------ABOUT------------->
+    
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/abhi.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Hello! I'm Abhishek S Ghodageri, a passionate Business Analyst and Product Manager based in Bangalore, Karnataka, India. With 4 years of experience in business analysis and product management, I am continually learning and growing in my roles. 
+
+                            I believe in the power of hard work and the importance of practice to achieve perfection. Alongside my work in business analysis and product management, I have developed a keen interest in web development. I enjoy sharpening my skills in this area in my spare time, always striving to expand my knowledge and expertise. 
+                            
+                            Feel free to reach out to me if you have any questions or would like to connect!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Business Analyst</span><br> Analyzing business requirements and translating them into actionable insights.</li>
+                                <li><span>Product management</span><br> Managing product lifecycles and driving product strategy to meet user needs.</li>
+                                <li><span>JIRA</span><br> For project management.</li>
+                                <li><span>SQL & Power BI</span><br> For database querying and data visualization</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Business analyst at TCS</span><br> From 2018 to cuurently working</li>
+                                <li><span>Product manager at TCS.</span><br> From 2020 to currently working</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>MBA in Business Analytics</span><br>  from IFIM college Bangalore (2022-2023).</li>
+                                <li><span> BE in Electronics and communiaction </span><br> from SDMCET Dharwad, Karnataka (2014-2018)</li>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for (tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for (tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+
+
+
+        </script>
+       
+
+    </body>
+
+</html>
